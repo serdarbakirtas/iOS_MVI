@@ -9,8 +9,13 @@ final class GithubProfileInteractor {
     // MARK: Properties
     let viewState: GitHubProfileViewState
     
-    init() {
+    let githubRepository: GithubRepository
+    
+    init(
+        githubRepository: GithubRepository = StandardGithubRepository()
+    ) {
         self.viewState = GitHubProfileViewState()
+        self.githubRepository = githubRepository
     }
 }
 
@@ -18,19 +23,12 @@ final class GithubProfileInteractor {
 
 extension GithubProfileInteractor {
     
-    func loadData() async {
-        
+    func fetchGitHubProfile() async {
         do {
-            let result = try await networkProvider.response(
-                from: StandartGithubRepository(
-                    apiRepo: .getProfile
-                )
-            )
-            self.viewState.requestState = .succeeded(result)
-            Logger.debug("ExploreDetailInteractor - successfully get githup profile: \(result)")
-        } catch  {
-            Logger.error("ExploreDetailInteractor - unsuccessfully get githup profile")
-            self.viewState.requestState = .failed(error)
+            guard let result = try await githubRepository.fetchProfile() else { return }
+            viewState.requestState = .succeeded(result)
+        } catch {
+            viewState.requestState = .failed(error)
         }
     }
 }

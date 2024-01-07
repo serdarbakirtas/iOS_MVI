@@ -1,47 +1,21 @@
 import Foundation
 
-public enum GithubRepository {
-    case getProfile
+protocol GithubRepository {
+    func fetchProfile() async throws -> GetAUser?
 }
 
-struct StandartGithubRepository: CodableAPIRequest {
+struct StandardGithubRepository: GithubRepository {
     
-    typealias Response = GetAUser
+    @Injected(\.networkProvider) var networkProvider: APIRepo
     
-    var apiRepo: GithubRepository
-    
-    init(apiRepo: GithubRepository) {
-        self.apiRepo = apiRepo
-    }
-
-    /// set path url
-    var path: String {
-        switch apiRepo {
-        case .getProfile:
-            return "serdarbakirtas"
-        }
-    }
-
-    /// get method
-    var method: HTTPMethod {
-        switch apiRepo {
-        case .getProfile:
-            return .get
-        }
-    }
-
-    /// set parameters
-    var params: [URLQueryItem]? {
-        switch apiRepo {
-        case .getProfile:
-            return nil
-        }
-    }
-    
-    /// set query items (parameters)
-    var body: [String: Any]? {
-        switch apiRepo {
-        case .getProfile:
+    func fetchProfile() async throws -> GetAUser? {
+        do {
+            let request = GithubRepositoryRequest(apiRepo: .getProfile)
+            let result = try await networkProvider.response(from: request)
+            Logger.debug("ExploreDetailInteractor - successfully get githup profile: \(result)")
+            return result
+        } catch  {
+            Logger.error("ExploreDetailInteractor - unsuccessfully get githup profile")
             return nil
         }
     }

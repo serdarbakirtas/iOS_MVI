@@ -31,6 +31,7 @@
 		307993BE2B4858DE0069D5F1 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307993BD2B4858DE0069D5F1 /* GithubRepository.swift */; };
 		307993C22B485A890069D5F1 /* LoadingSpinnerOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307993C12B485A890069D5F1 /* LoadingSpinnerOverlay.swift */; };
 		307993C42B485AD20069D5F1 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307993C32B485AD20069D5F1 /* ErrorView.swift */; };
+		307993C62B4AD3030069D5F1 /* GithubRepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307993C52B4AD3030069D5F1 /* GithubRepositoryRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		307993BD2B4858DE0069D5F1 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
 		307993C12B485A890069D5F1 /* LoadingSpinnerOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerOverlay.swift; sourceTree = "<group>"; };
 		307993C32B485AD20069D5F1 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		307993C52B4AD3030069D5F1 /* GithubRepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				307993BD2B4858DE0069D5F1 /* GithubRepository.swift */,
+				307993C52B4AD3030069D5F1 /* GithubRepositoryRequest.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				3079939E2B48552A0069D5F1 /* GithubProfileInteractor.swift in Sources */,
 				307993C42B485AD20069D5F1 /* ErrorView.swift in Sources */,
 				3079936F2B48543B0069D5F1 /* GitHubProfileView.swift in Sources */,
+				307993C62B4AD3030069D5F1 /* GithubRepositoryRequest.swift in Sources */,
 				307993B52B48576A0069D5F1 /* InjectedValues.swift in Sources */,
 				307993B72B48576A0069D5F1 /* Dependencies.swift in Sources */,
 				307993AA2B4856CE0069D5F1 /* HTTPMethod.swift in Sources */,

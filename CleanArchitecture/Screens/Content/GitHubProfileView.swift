@@ -30,7 +30,7 @@ struct GitHubProfileView: View {
         .background(.black)
         .edgesIgnoringSafeArea(.all)
         .task {
-            await interactor?.loadData()
+            await interactor?.fetchGitHubProfile()
         }
     }
 }
