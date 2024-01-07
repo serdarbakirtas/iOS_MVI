@@ -1,22 +1,35 @@
 import Foundation
 
-enum APIError: Error {
+enum APIError: Error, Equatable {
     case invalidURL
-
-    /// http status code
     case httpCode(HTTPCode)
-    
-    /// authentication
     case authenticationError
-
-    /// unkowns
     case unexpectedError(message: String)
     case unexpectedResponse(_ : Error)
-
-    /// API response data or mapping errors
     case responseError
     case parseError(_ : Error)
+
+    // Equatable conformance
+    static func == (lhs: APIError, rhs: APIError) -> Bool {
+        switch (lhs, rhs) {
+        case (.invalidURL, .invalidURL),
+             (.authenticationError, .authenticationError),
+             (.responseError, .responseError):
+            return true
+        case let (.httpCode(code1), .httpCode(code2)):
+            return code1 == code2
+        case let (.unexpectedError(message1), .unexpectedError(message2)):
+            return message1 == message2
+        case let (.unexpectedResponse(error1), .unexpectedResponse(error2)):
+            return error1.localizedDescription == error2.localizedDescription
+        case let (.parseError(error1), .parseError(error2)):
+            return error1.localizedDescription == error2.localizedDescription
+        default:
+            return false
+        }
+    }
 }
+
 
 
 // MARK: Message types
