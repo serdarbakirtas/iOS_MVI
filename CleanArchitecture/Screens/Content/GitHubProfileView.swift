@@ -2,12 +2,12 @@ import SwiftUI
 
 struct GitHubProfileView: View {
     
-    @Bindable private var viewState: GitHubProfileViewState
+    @State private var viewState: GitHubProfileViewState
     @State private var interactor: GithubProfileInteractor?
 
     init(interactor: GithubProfileInteractor) {
         _interactor = State(initialValue: interactor)
-        _viewState = Bindable(wrappedValue: interactor.viewState)
+        _viewState = State(wrappedValue: interactor.viewState)
     }
     
     var body: some View {
