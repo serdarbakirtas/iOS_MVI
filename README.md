@@ -24,8 +24,8 @@ The Model-View-Intent (MVI) architecture is a pattern commonly used in mobile ap
 ### Model
 
 - The Model represents the data and business logic of the application.
-- It encapsulates the state of the application and exposes methods to manipulate that state.
-- In MVI, the Model is immutable, meaning that changes to the state result in the creation of a new instance rather than mutating the existing one.
+- It encapsulates the application's state and exposes methods to manipulate that state.
+- In MVI, the Model is immutable, meaning that changes to the state create a new instance rather than mutating the existing one.
 - The Model emits state updates to be consumed by the View.
 
 ### View
@@ -83,5 +83,3 @@ The `reduce` method handles incoming intents asynchronously, updating the state 
 ## Conclusion
 
 The Model-View-Intent (MVI) architecture offers a structured approach to building reactive and maintainable user interfaces in mobile applications. By separating concerns and enforcing immutability, MVI promotes predictability, testability, and scalability, making it a popular choice for modern app development.
-
-<img src="https://github.com/serdarbakirtas/iOS_MVI/blob/release/iOS_MVI/Resources/Simulator.png" alt="HTML5 Icon" width="276" height="598"> <img src="https://github.com/serdarbakirtas/iOS_MVI/blob/release/iOS_MVI/Resources/MVI.png" alt="HTML5 Icon" width="660" height="598">
