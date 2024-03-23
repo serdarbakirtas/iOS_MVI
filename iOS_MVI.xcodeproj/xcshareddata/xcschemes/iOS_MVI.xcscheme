@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1510"
+   LastUpgradeVersion = "1530"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -15,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "307993682B48543B0069D5F1"
-               BuildableName = "CleanArchitecture.app"
-               BlueprintName = "CleanArchitecture"
-               ReferencedContainer = "container:CleanArchitecture.xcodeproj">
+               BuildableName = "iOS_MVI.app"
+               BlueprintName = "iOS_MVI"
+               ReferencedContainer = "container:iOS_MVI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,30 +29,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3079937A2B48543E0069D5F1"
-               BuildableName = "CleanArchitectureTests.xctest"
-               BlueprintName = "CleanArchitectureTests"
-               ReferencedContainer = "container:CleanArchitecture.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "307993842B48543E0069D5F1"
-               BuildableName = "CleanArchitectureUITests.xctest"
-               BlueprintName = "CleanArchitectureUITests"
-               ReferencedContainer = "container:CleanArchitecture.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -68,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "307993682B48543B0069D5F1"
-            BuildableName = "CleanArchitecture.app"
-            BlueprintName = "CleanArchitecture"
-            ReferencedContainer = "container:CleanArchitecture.xcodeproj">
+            BuildableName = "iOS_MVI.app"
+            BlueprintName = "iOS_MVI"
+            ReferencedContainer = "container:iOS_MVI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "307993682B48543B0069D5F1"
-            BuildableName = "CleanArchitecture.app"
-            BlueprintName = "CleanArchitecture"
-            ReferencedContainer = "container:CleanArchitecture.xcodeproj">
+            BuildableName = "iOS_MVI.app"
+            BlueprintName = "iOS_MVI"
+            ReferencedContainer = "container:iOS_MVI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

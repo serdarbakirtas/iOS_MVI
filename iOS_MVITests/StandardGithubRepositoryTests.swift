@@ -1,5 +1,5 @@
 import XCTest
-@testable import CleanArchitecture
+@testable import iOS_MVI
 
 class StandardGithubRepositoryTests: XCTestCase {
 

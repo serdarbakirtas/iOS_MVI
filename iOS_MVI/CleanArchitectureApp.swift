@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct CleanArchitectureApp: App {
+struct iOS_MVIApp: App {
     var body: some Scene {
         WindowGroup {
             GitHubProfileView(interactor: GithubProfileInteractor())

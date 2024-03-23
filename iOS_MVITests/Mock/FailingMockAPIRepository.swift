@@ -1,5 +1,5 @@
 import XCTest
-@testable import CleanArchitecture
+@testable import iOS_MVI
 
 // Create a mock API repository that throws an error
 class FailingMockAPIRepository: APIRepo {
