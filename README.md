@@ -1,4 +1,4 @@
-# Experimantal MVI Project 
+# Experimental MVI Project 
 
 ## Getting Started
 
