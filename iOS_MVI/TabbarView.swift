@@ -7,7 +7,6 @@ extension TabbarView {
         case home
         case search
         case map
-        case profile
     }
 }
 
@@ -26,29 +25,25 @@ struct TabbarView: View {
 
             FakeEmptyView()
                 .tag(Tab.map)
-
-            FakeEmptyView()
-                .tag(Tab.profile)
         }
         .overlay(
             Color.white
                 .edgesIgnoringSafeArea(.vertical)
-                .frame(height: 50)
+                .frame(height: 68) // The height of a tab bar is default 68 points.
                 .shadow(color: Color.black.opacity(0.2), radius: 16, x: 0, y: 2)
                 .overlay(
                     HStack {
-                        TabBarButton(tab: .home, image: Asset.TabbarIcons.home.imageView, selectedTab: $selectedTab)
+                        TabBarButton(tab: .home, image: Asset.TabbarIcons.profile.imageView, selectedTab: $selectedTab)
                         Spacer()
                         TabBarButton(tab: .search, image: Asset.TabbarIcons.search.imageView, selectedTab: $selectedTab)
                         Spacer()
                         TabBarButton(tab: .map, image: Asset.TabbarIcons.map.imageView, selectedTab: $selectedTab)
-                        Spacer()
-                        TabBarButton(tab: .profile, image: Asset.TabbarIcons.profile.imageView, selectedTab: $selectedTab)
                     }
-                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                    .padding(EdgeInsets(top: 16, leading: 40, bottom: 40, trailing: 40))
                 ),
             alignment: .bottom
         )
+        .edgesIgnoringSafeArea(.all)
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
