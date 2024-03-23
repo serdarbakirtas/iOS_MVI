@@ -83,3 +83,5 @@ The `reduce` method handles incoming intents asynchronously, updating the state 
 ## Conclusion
 
 The Model-View-Intent (MVI) architecture offers a structured approach to building reactive and maintainable user interfaces in mobile applications. By separating concerns and enforcing immutability, MVI promotes predictability, testability, and scalability, making it a popular choice for modern app development.
+
+<img src="https://github.com/serdarbakirtas/iOS_MVI/blob/release/iOS_MVI/Resources/Simulator.png" alt="HTML5 Icon" width="276" height="598"> <img src="https://github.com/serdarbakirtas/iOS_MVI/blob/release/iOS_MVI/Resources/MVI.png" alt="HTML5 Icon" width="660" height="598">
