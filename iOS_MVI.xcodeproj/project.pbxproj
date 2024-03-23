@@ -35,6 +35,8 @@
 		30AEDFFB2BAF13EF00E674D9 /* ProfileFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFF82BAF13EF00E674D9 /* ProfileFeature.swift */; };
 		30AEDFFD2BAF16AA00E674D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFFC2BAF16AA00E674D9 /* ContentView.swift */; };
 		30AEE0002BAF170100E674D9 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFFF2BAF170100E674D9 /* NetworkMonitor.swift */; };
+		30AEE0022BAF17F100E674D9 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE0012BAF17F100E674D9 /* NavigationBarModifier.swift */; };
+		30AEE0052BAF180E00E674D9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE0042BAF180E00E674D9 /* Color.swift */; };
 		30B17DBE2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */; };
 		30B17DC42B4AE82F00E93B6B /* FailingMockAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */; };
 /* End PBXBuildFile section */
@@ -88,6 +90,8 @@
 		30AEDFF82BAF13EF00E674D9 /* ProfileFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeature.swift; sourceTree = "<group>"; };
 		30AEDFFC2BAF16AA00E674D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30AEDFFF2BAF170100E674D9 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		30AEE0012BAF17F100E674D9 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		30AEE0042BAF180E00E674D9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryRequestTests.swift; sourceTree = "<group>"; };
 		30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailingMockAPIRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +243,7 @@
 		307993B92B4857F90069D5F1 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				30AEE0032BAF180400E674D9 /* Extension */,
 				30AEDFFE2BAF16F700E674D9 /* Network */,
 				307993BF2B485A720069D5F1 /* Helper */,
 				307993C02B485A780069D5F1 /* View */,
@@ -268,6 +273,7 @@
 			children = (
 				307993C32B485AD20069D5F1 /* ErrorView.swift */,
 				307993C12B485A890069D5F1 /* LoadingSpinnerOverlay.swift */,
+				30AEE0012BAF17F100E674D9 /* NavigationBarModifier.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +304,14 @@
 				30AEDFFF2BAF170100E674D9 /* NetworkMonitor.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		30AEE0032BAF180400E674D9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				30AEE0042BAF180E00E674D9 /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +449,7 @@
 				30AEDFFD2BAF16AA00E674D9 /* ContentView.swift in Sources */,
 				30AEDFFB2BAF13EF00E674D9 /* ProfileFeature.swift in Sources */,
 				307993BE2B4858DE0069D5F1 /* GithubRepository.swift in Sources */,
+				30AEE0052BAF180E00E674D9 /* Color.swift in Sources */,
 				307993C42B485AD20069D5F1 /* ErrorView.swift in Sources */,
 				307993C62B4AD3030069D5F1 /* GithubRepositoryRequest.swift in Sources */,
 				307993B52B48576A0069D5F1 /* InjectedValues.swift in Sources */,
@@ -446,6 +461,7 @@
 				307993BB2B4858640069D5F1 /* Logger.swift in Sources */,
 				307993B82B48576A0069D5F1 /* InjectionKey.swift in Sources */,
 				307993AB2B4856CE0069D5F1 /* APIError.swift in Sources */,
+				30AEE0022BAF17F100E674D9 /* NavigationBarModifier.swift in Sources */,
 				307993B62B48576A0069D5F1 /* Injected.swift in Sources */,
 				307993AE2B4856CE0069D5F1 /* APIRequest.swift in Sources */,
 				307993AC2B4856CE0069D5F1 /* APIRequestType.swift in Sources */,
