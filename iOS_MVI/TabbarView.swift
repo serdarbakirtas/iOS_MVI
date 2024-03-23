@@ -29,7 +29,7 @@ struct TabbarView: View {
         .overlay(
             Color.white
                 .edgesIgnoringSafeArea(.vertical)
-                .frame(height: 68) // The height of a tab bar is default 68 points.
+                .frame(height: 80) // The height of a tab bar is default 68 points.13 is the lock bar height
                 .shadow(color: Color.black.opacity(0.2), radius: 16, x: 0, y: 2)
                 .overlay(
                     HStack {
@@ -39,7 +39,7 @@ struct TabbarView: View {
                         Spacer()
                         TabBarButton(tab: .map, image: Asset.TabbarIcons.map.imageView, selectedTab: $selectedTab)
                     }
-                    .padding(EdgeInsets(top: 16, leading: 40, bottom: 40, trailing: 40))
+                    .padding(EdgeInsets(top: 16, leading: 40, bottom: 48, trailing: 40))
                 ),
             alignment: .bottom
         )
