@@ -1,11 +1,11 @@
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct iOS_MVIApp: App {
     var body: some Scene {
         WindowGroup {
-            GitHubProfileView(interactor: GithubProfileInteractor())
+            ProfileView()
         }
     }
 }
