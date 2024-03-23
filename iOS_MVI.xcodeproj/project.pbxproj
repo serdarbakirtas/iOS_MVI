@@ -38,6 +38,8 @@
 		30AEE0022BAF17F100E674D9 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE0012BAF17F100E674D9 /* NavigationBarModifier.swift */; };
 		30AEE0052BAF180E00E674D9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE0042BAF180E00E674D9 /* Color.swift */; };
 		30AEE0092BAF1DE300E674D9 /* ProfileFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE0082BAF1DE300E674D9 /* ProfileFeatureTests.swift */; };
+		30AEE00C2BAF201D00E674D9 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE00B2BAF201D00E674D9 /* TabbarView.swift */; };
+		30AEE00E2BAF209C00E674D9 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE00D2BAF209C00E674D9 /* ImageAsset.swift */; };
 		30B17DBE2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */; };
 		30B17DC42B4AE82F00E93B6B /* FailingMockAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +97,8 @@
 		30AEE0042BAF180E00E674D9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		30AEE0062BAF1D0A00E674D9 /* iOS_MVI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = iOS_MVI.xctestplan; path = ../iOS_MVI.xctestplan; sourceTree = "<group>"; };
 		30AEE0082BAF1DE300E674D9 /* ProfileFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeatureTests.swift; sourceTree = "<group>"; };
+		30AEE00B2BAF201D00E674D9 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		30AEE00D2BAF209C00E674D9 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryRequestTests.swift; sourceTree = "<group>"; };
 		30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailingMockAPIRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +159,7 @@
 				307993982B4854CC0069D5F1 /* Screens */,
 				3079936C2B48543B0069D5F1 /* iOS_MVIApp.swift */,
 				30AEDFFC2BAF16AA00E674D9 /* ContentView.swift */,
+				30AEE00B2BAF201D00E674D9 /* TabbarView.swift */,
 				307993722B48543D0069D5F1 /* Assets.xcassets */,
 				307993742B48543D0069D5F1 /* Preview Content */,
 			);
@@ -313,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				30AEE0042BAF180E00E674D9 /* Color.swift */,
+				30AEE00D2BAF209C00E674D9 /* ImageAsset.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -469,10 +475,12 @@
 				30AEDFFA2BAF13EF00E674D9 /* ProfileViewState.swift in Sources */,
 				30AEDFFD2BAF16AA00E674D9 /* ContentView.swift in Sources */,
 				30AEDFFB2BAF13EF00E674D9 /* ProfileFeature.swift in Sources */,
+				30AEE00E2BAF209C00E674D9 /* ImageAsset.swift in Sources */,
 				307993BE2B4858DE0069D5F1 /* GithubRepository.swift in Sources */,
 				30AEE0052BAF180E00E674D9 /* Color.swift in Sources */,
 				307993C42B485AD20069D5F1 /* ErrorView.swift in Sources */,
 				307993C62B4AD3030069D5F1 /* GithubRepositoryRequest.swift in Sources */,
+				30AEE00C2BAF201D00E674D9 /* TabbarView.swift in Sources */,
 				307993B52B48576A0069D5F1 /* InjectedValues.swift in Sources */,
 				307993B72B48576A0069D5F1 /* Dependencies.swift in Sources */,
 				307993AA2B4856CE0069D5F1 /* HTTPMethod.swift in Sources */,

@@ -32,7 +32,10 @@ extension ProfileView {
                 case .succeeded:
                     VStack {
                         Text(feature.viewState.dataSource?.login ?? "")
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .foregroundColor(.cDark)
                     }
+                    .background(Color.white)
                 case let .failed(error):
                     ErrorView(error: error as? APIError)
                 }

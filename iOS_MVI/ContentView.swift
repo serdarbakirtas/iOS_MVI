@@ -8,7 +8,7 @@ struct ContentView: View {
     var body: some View {
         switch networkMonitor.networkStatus {
         case .connected:
-            profileView
+            tabbarView
         case .disconnected:
             contentUnavailableView
         }
@@ -18,9 +18,8 @@ struct ContentView: View {
 // MARK: - Child views
 
 extension ContentView {
-    private var profileView: some View {
-        ProfileView()
-            .navigationViewStyle(StackNavigationViewStyle())
+    private var tabbarView: some View {
+        TabbarView()
     }
 
     private var contentUnavailableView: some View {
