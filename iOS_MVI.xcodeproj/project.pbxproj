@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3079936D2B48543B0069D5F1 /* CleanArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079936C2B48543B0069D5F1 /* CleanArchitectureApp.swift */; };
+		3079936D2B48543B0069D5F1 /* iOS_MVIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079936C2B48543B0069D5F1 /* iOS_MVIApp.swift */; };
 		307993732B48543D0069D5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307993722B48543D0069D5F1 /* Assets.xcassets */; };
 		307993762B48543D0069D5F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307993752B48543D0069D5F1 /* Preview Assets.xcassets */; };
 		3079938A2B48543E0069D5F1 /* CleanArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307993892B48543E0069D5F1 /* CleanArchitectureUITests.swift */; };
@@ -60,7 +60,7 @@
 
 /* Begin PBXFileReference section */
 		307993692B48543B0069D5F1 /* iOS_MVI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_MVI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3079936C2B48543B0069D5F1 /* CleanArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureApp.swift; sourceTree = "<group>"; };
+		3079936C2B48543B0069D5F1 /* iOS_MVIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_MVIApp.swift; sourceTree = "<group>"; };
 		307993722B48543D0069D5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307993752B48543D0069D5F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3079937B2B48543E0069D5F1 /* iOS_MVITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_MVITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +149,7 @@
 				3079939A2B4854E30069D5F1 /* Network */,
 				307993992B4854D80069D5F1 /* Model */,
 				307993982B4854CC0069D5F1 /* Screens */,
-				3079936C2B48543B0069D5F1 /* CleanArchitectureApp.swift */,
+				3079936C2B48543B0069D5F1 /* iOS_MVIApp.swift */,
 				30AEDFFC2BAF16AA00E674D9 /* ContentView.swift */,
 				307993722B48543D0069D5F1 /* Assets.xcassets */,
 				307993742B48543D0069D5F1 /* Preview Content */,
@@ -465,7 +465,7 @@
 				307993B62B48576A0069D5F1 /* Injected.swift in Sources */,
 				307993AE2B4856CE0069D5F1 /* APIRequest.swift in Sources */,
 				307993AC2B4856CE0069D5F1 /* APIRequestType.swift in Sources */,
-				3079936D2B48543B0069D5F1 /* CleanArchitectureApp.swift in Sources */,
+				3079936D2B48543B0069D5F1 /* iOS_MVIApp.swift in Sources */,
 				307993A22B48561B0069D5F1 /* GetAUser.swift in Sources */,
 				307993C22B485A890069D5F1 /* LoadingSpinnerOverlay.swift in Sources */,
 			);
