@@ -5,7 +5,7 @@ import SwiftUI
 struct iOS_MVIApp: App {
     var body: some Scene {
         WindowGroup {
-            ProfileView()
+            ContentView()
         }
     }
 }

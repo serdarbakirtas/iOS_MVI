@@ -33,6 +33,8 @@
 		30AEDFF92BAF13EF00E674D9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFF62BAF13EF00E674D9 /* ProfileView.swift */; };
 		30AEDFFA2BAF13EF00E674D9 /* ProfileViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFF72BAF13EF00E674D9 /* ProfileViewState.swift */; };
 		30AEDFFB2BAF13EF00E674D9 /* ProfileFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFF82BAF13EF00E674D9 /* ProfileFeature.swift */; };
+		30AEDFFD2BAF16AA00E674D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFFC2BAF16AA00E674D9 /* ContentView.swift */; };
+		30AEE0002BAF170100E674D9 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEDFFF2BAF170100E674D9 /* NetworkMonitor.swift */; };
 		30B17DBE2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */; };
 		30B17DC42B4AE82F00E93B6B /* FailingMockAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +86,8 @@
 		30AEDFF62BAF13EF00E674D9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		30AEDFF72BAF13EF00E674D9 /* ProfileViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewState.swift; sourceTree = "<group>"; };
 		30AEDFF82BAF13EF00E674D9 /* ProfileFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeature.swift; sourceTree = "<group>"; };
+		30AEDFFC2BAF16AA00E674D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30AEDFFF2BAF170100E674D9 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryRequestTests.swift; sourceTree = "<group>"; };
 		30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailingMockAPIRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +146,7 @@
 				307993992B4854D80069D5F1 /* Model */,
 				307993982B4854CC0069D5F1 /* Screens */,
 				3079936C2B48543B0069D5F1 /* CleanArchitectureApp.swift */,
+				30AEDFFC2BAF16AA00E674D9 /* ContentView.swift */,
 				307993722B48543D0069D5F1 /* Assets.xcassets */,
 				307993742B48543D0069D5F1 /* Preview Content */,
 			);
@@ -234,6 +239,7 @@
 		307993B92B4857F90069D5F1 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				30AEDFFE2BAF16F700E674D9 /* Network */,
 				307993BF2B485A720069D5F1 /* Helper */,
 				307993C02B485A780069D5F1 /* View */,
 			);
@@ -284,6 +290,14 @@
 				30AEDFF82BAF13EF00E674D9 /* ProfileFeature.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		30AEDFFE2BAF16F700E674D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				30AEDFFF2BAF170100E674D9 /* NetworkMonitor.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +432,7 @@
 			files = (
 				30AEDFF92BAF13EF00E674D9 /* ProfileView.swift in Sources */,
 				30AEDFFA2BAF13EF00E674D9 /* ProfileViewState.swift in Sources */,
+				30AEDFFD2BAF16AA00E674D9 /* ContentView.swift in Sources */,
 				30AEDFFB2BAF13EF00E674D9 /* ProfileFeature.swift in Sources */,
 				307993BE2B4858DE0069D5F1 /* GithubRepository.swift in Sources */,
 				307993C42B485AD20069D5F1 /* ErrorView.swift in Sources */,
@@ -426,6 +441,7 @@
 				307993B72B48576A0069D5F1 /* Dependencies.swift in Sources */,
 				307993AA2B4856CE0069D5F1 /* HTTPMethod.swift in Sources */,
 				307993B02B48573A0069D5F1 /* RequestState.swift in Sources */,
+				30AEE0002BAF170100E674D9 /* NetworkMonitor.swift in Sources */,
 				307993AD2B4856CE0069D5F1 /* API.swift in Sources */,
 				307993BB2B4858640069D5F1 /* Logger.swift in Sources */,
 				307993B82B48576A0069D5F1 /* InjectionKey.swift in Sources */,
