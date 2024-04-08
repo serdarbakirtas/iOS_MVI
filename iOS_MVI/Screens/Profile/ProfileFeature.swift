@@ -1,5 +1,5 @@
 final class ProfileFeature {
-    @Injected(\.githupRepositoryProvider) var githubRepository: GithubRepository
+    @Injected(\.githubRepositoryProvider) var githubRepository: GithubRepository
 
     // Intent Definition
     enum Intent {

@@ -5,36 +5,35 @@ public enum ApiRepoState {
 }
 
 struct GithubRepositoryRequest: CodableAPIRequest {
-    
     var apiRepo: ApiRepoState
-    
+
     init(apiRepo: ApiRepoState) {
         self.apiRepo = apiRepo
     }
-    
+
     // MARK: - Request
-    
+
     /// set path url
     var path: String {
         switch apiRepo {
         case .getProfile:
-            return "serdarbakirtas"
+            "serdarbakirtas"
         }
     }
-    
+
     /// set parameters
     var params: [URLQueryItem]? {
         switch apiRepo {
         case .getProfile:
-            return nil
+            nil
         }
     }
-    
+
     /// get method
     var method: HTTPMethod {
         switch apiRepo {
         case .getProfile:
-            return .get
+            .get
         }
     }
 
@@ -42,11 +41,11 @@ struct GithubRepositoryRequest: CodableAPIRequest {
     var body: [String: Any]? {
         switch apiRepo {
         case .getProfile:
-            return nil
+            nil
         }
     }
-    
+
     // MARK: - Response
-    
+
     typealias Response = GetAUser
 }
