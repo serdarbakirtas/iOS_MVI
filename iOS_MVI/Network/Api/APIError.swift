@@ -30,8 +30,6 @@ enum APIError: Error, Equatable {
     }
 }
 
-
-
 // MARK: Message types
 extension APIError: LocalizedError {
 

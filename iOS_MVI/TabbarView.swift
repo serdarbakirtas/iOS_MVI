@@ -17,8 +17,6 @@ struct TabbarView: View {
         TabView(selection: $selectedTab) {
             ProfileView()
                 .tag(Tab.home)
-                .preferredColorScheme(.dark)
-                .background(Color.white)
 
             FakeEmptyView()
                 .tag(Tab.search)

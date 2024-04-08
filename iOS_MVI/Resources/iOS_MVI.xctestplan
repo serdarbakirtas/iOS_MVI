@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "98961C4F-E0F9-4C0A-92FA-A345F50A682E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:iOS_MVI.xcodeproj",
+        "identifier" : "3079937A2B48543E0069D5F1",
+        "name" : "iOS_MVITests"
+      }
+    }
+  ],
+  "version" : 1
+}

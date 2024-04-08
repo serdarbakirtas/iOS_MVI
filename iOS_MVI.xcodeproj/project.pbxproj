@@ -90,6 +90,7 @@
 		307993C52B4AD3030069D5F1 /* GithubRepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryRequest.swift; sourceTree = "<group>"; };
 		307993C72B4AD4140069D5F1 /* StandardGithubRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardGithubRepositoryTests.swift; sourceTree = "<group>"; };
 		307993CD2B4AE1600069D5F1 /* MockAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIRepository.swift; sourceTree = "<group>"; };
+		30A013CC2BC47A1E00677598 /* iOS_MVI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = iOS_MVI.xctestplan; sourceTree = "<group>"; };
 		30AEDFF62BAF13EF00E674D9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		30AEDFF72BAF13EF00E674D9 /* ProfileViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewState.swift; sourceTree = "<group>"; };
 		30AEDFF82BAF13EF00E674D9 /* ProfileFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeature.swift; sourceTree = "<group>"; };
@@ -97,7 +98,6 @@
 		30AEDFFF2BAF170100E674D9 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		30AEE0012BAF17F100E674D9 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		30AEE0042BAF180E00E674D9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		30AEE0062BAF1D0A00E674D9 /* iOS_MVI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = iOS_MVI.xctestplan; path = ../iOS_MVI.xctestplan; sourceTree = "<group>"; };
 		30AEE0082BAF1DE300E674D9 /* ProfileFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeatureTests.swift; sourceTree = "<group>"; };
 		30AEE00B2BAF201D00E674D9 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		30AEE00D2BAF209C00E674D9 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
@@ -135,7 +135,6 @@
 		307993602B48543B0069D5F1 = {
 			isa = PBXGroup;
 			children = (
-				30AEE0062BAF1D0A00E674D9 /* iOS_MVI.xctestplan */,
 				3079936B2B48543B0069D5F1 /* iOS_MVI */,
 				3079937E2B48543E0069D5F1 /* iOS_MVITests */,
 				307993882B48543E0069D5F1 /* iOS_MVIUITests */,
@@ -245,10 +244,10 @@
 		307993A52B4856CE0069D5F1 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				307993A62B4856CE0069D5F1 /* APIError.swift */,
-				307993A72B4856CE0069D5F1 /* APIRequestType.swift */,
 				307993A82B4856CE0069D5F1 /* API.swift */,
+				307993A62B4856CE0069D5F1 /* APIError.swift */,
 				307993A92B4856CE0069D5F1 /* APIRequest.swift */,
+				307993A72B4856CE0069D5F1 /* APIRequestType.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -349,6 +348,7 @@
 		30AEE00F2BAF2A2500E674D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				30A013CC2BC47A1E00677598 /* iOS_MVI.xctestplan */,
 				30AEE0102BAF2A6A00E674D9 /* MVI.png */,
 				30AEE0112BAF2A6A00E674D9 /* Simulator.png */,
 			);

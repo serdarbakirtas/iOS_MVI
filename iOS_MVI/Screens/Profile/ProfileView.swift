@@ -35,7 +35,6 @@ extension ProfileView {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .foregroundColor(.cDark)
                     }
-                    .background(Color.white)
                 case let .failed(error):
                     ErrorView(error: error as? APIError)
                 }
