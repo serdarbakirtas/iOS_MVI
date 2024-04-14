@@ -1,7 +1,13 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @State private var feature = ProfileFeature()
+    @State private var feature: ProfileFeature
+    @State private var viewState: ProfileViewState
+
+    init(feature: ProfileFeature) {
+        _feature = State(initialValue: feature)
+        _viewState = State(wrappedValue: feature.viewState)
+    }
 
     var body: some View {
         NavigationView {
@@ -26,12 +32,12 @@ extension ProfileView {
     private var contentView: some View {
         ZStack {
             VStack {
-                switch feature.viewState.requestState {
+                switch viewState.requestState {
                 case .pending, .progressing:
                     LoadingSpinnerOverlay(color: .orange, size: 40, speed: 0.3)
                 case .succeeded:
                     VStack {
-                        Text(feature.viewState.dataSource?.login ?? "")
+                        Text(viewState.dataSource?.login ?? "")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .foregroundColor(.cDark)
                     }
@@ -46,5 +52,5 @@ extension ProfileView {
 // MARK: - Previews
 
 #Preview {
-    ProfileView()
+    ProfileView(feature: ProfileFeature())
 }

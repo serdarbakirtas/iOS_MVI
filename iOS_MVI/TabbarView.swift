@@ -15,7 +15,7 @@ struct TabbarView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            ProfileView()
+            ProfileView(feature: ProfileFeature())
                 .tag(Tab.home)
 
             FakeEmptyView()
