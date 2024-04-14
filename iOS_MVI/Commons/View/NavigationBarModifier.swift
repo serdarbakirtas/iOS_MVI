@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct NavigationBarModifier: ViewModifier {
-        
     var backgroundColor: UIColor?
     public var font: UIFont?
 
@@ -12,18 +11,18 @@ struct NavigationBarModifier: ViewModifier {
         coloredAppearance.backgroundColor = backgroundColor
         coloredAppearance.titleTextAttributes = [.foregroundColor: textColor]
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: textColor, .font: font]
-        
+
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
     }
-    
+
     func body(content: Content) -> some View {
         ZStack {
             content
             VStack {
                 GeometryReader { geometry in
-                    Color(self.backgroundColor ?? .clear)
+                    Color(backgroundColor ?? .clear)
                         .frame(height: geometry.safeAreaInsets.top)
                         .edgesIgnoringSafeArea(.top)
                     Spacer()
@@ -34,8 +33,7 @@ struct NavigationBarModifier: ViewModifier {
 }
 
 extension View {
-    
     func navigationTitle(backgroundColor: UIColor, textColor: UIColor, font: UIFont) -> some View {
-        self.modifier(NavigationBarModifier(backgroundColor: backgroundColor, textColor: textColor, font: font))
+        modifier(NavigationBarModifier(backgroundColor: backgroundColor, textColor: textColor, font: font))
     }
 }
