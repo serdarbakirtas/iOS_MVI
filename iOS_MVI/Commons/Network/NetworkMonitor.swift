@@ -34,10 +34,6 @@ extension NetworkMonitor {
 
     // Method to update network status based on path update
     private func updateNetworkStatus(for path: NWPath) {
-        if path.status == .satisfied {
-            networkStatus = .connected
-        } else {
-            networkStatus = .disconnected
-        }
+        networkStatus = path.status == .satisfied ? .connected : .disconnected
     }
 }
