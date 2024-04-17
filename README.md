@@ -53,7 +53,7 @@ The `ProfileFeature` manages the state of the profile view using the `ProfileVie
 
 ## Initializers
 
-- ` @Injected(\.githupRepositoryProvider)`: Initializes the `ProfileFeature` with a GitHub repository. Implementation is like a Enviroment property.
+- ` @Injected(\.githupRepositoryProvider)`: Initializes the `ProfileFeature` with a GitHub repository. Implementation is like an environmental property.
 
 ## Intent Handling
 
@@ -67,15 +67,15 @@ The `reduce` method handles incoming intents asynchronously, updating the state 
 2. **Intent Handling**: The View sends the intent to the Feature for processing.
 3. **State Update**: The Feature processes the intent, updates the Model accordingly, and emits a new state.
 4. **UI Rendering**: The View observes the state changes emitted by the Feature and updates the UI to reflect the new state.
-5. **Feedback Loop**: The process repeats as the user continues to interact with the application, creating a reactive feedback loop.
+5. **Feedback Loop**: The process repeats as the user interacts with the application, creating a reactive feedback loop.
 
 ***
 
 ## Benefits
 
 - **Reactive**: MVI promotes a reactive programming paradigm, where changes in state trigger automatic updates to the user interface.
-- **Predictable**: By enforcing immutability and separating concerns, MVI makes application behavior more predictable and easier to understand.
-- **Testable**: The pure functions and clear separation of concerns in MVI make it easier to write unit tests for individual components.
+- **Predictable**: MVI makes application behavior more predictable and easier to understand by enforcing immutability and separating concerns.
+- **Testable**: The pure functions and clear separation of concerns in MVI make writing unit tests for individual components easier.
 - **Scalable**: MVI provides a scalable architecture that can accommodate complex user interfaces and evolving application requirements.
 
 ***
@@ -83,3 +83,8 @@ The `reduce` method handles incoming intents asynchronously, updating the state 
 ## Conclusion
 
 The Model-View-Intent (MVI) architecture offers a structured approach to building reactive and maintainable user interfaces in mobile applications. By separating concerns and enforcing immutability, MVI promotes predictability, testability, and scalability, making it a popular choice for modern app development.
+
+***
+
+## Screenshot
+<img src="https://github.com/serdarbakirtas/iOS_MVI/blob/release/iOS_MVI/Resources/SS.png" alt="HTML5 Icon" width="276" height="598">
