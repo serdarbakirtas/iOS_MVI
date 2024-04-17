@@ -24,7 +24,7 @@ struct LoadingSpinnerOverlay: View {
         HStack(spacing: 0) {
             ForEach(0 ..< maxCounter, id: \.hashValue) { index in
                 Circle()
-                    .scale(counter == index ? 1.0 : 0.5)
+//                    .scale(counter == index ? 1.0 : 0.5)
                     .fill(primaryColor)
             }
         }
@@ -34,17 +34,6 @@ struct LoadingSpinnerOverlay: View {
                 counter = counter == (maxCounter - 1) ? 0 : counter + 1
             }
         })
-    }
-}
-
-/// A loading indicator that is controlled by a RequestState (only visible in `.progressing` state).
-struct RequestStateLoadingSpinnerOverlay<Value, Failure>: View {
-    let requestState: RequestState<Value, Failure>
-
-    var body: some View {
-        if case .progressing = requestState {
-            LoadingSpinnerOverlay(color: .orange, size: 30, speed: 0.3)
-        }
     }
 }
 

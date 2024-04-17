@@ -47,5 +47,5 @@ struct GithubRepositoryRequest: CodableAPIRequest {
 
     // MARK: - Response
 
-    typealias Response = GetAUser
+    typealias Response = GitHubUser
 }

@@ -10,41 +10,43 @@ struct ProfileView: View {
     }
 
     var body: some View {
-        NavigationView {
-            contentView
-                .navigationTitle("Profile")
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(
-            backgroundColor: UIColor(Color.cPrimary),
-            textColor: UIColor(Color.cWhite),
-            font: UIFont.boldSystemFont(ofSize: 28)
-        )
-        .task {
-            await feature.reduce(intent: .viewAppeared)
-        }
+        requestHandlerView
+            .task {
+                await feature.reduce(intent: .viewAppeared)
+            }
     }
 }
 
 // MARK: - Child views
 
 extension ProfileView {
-    private var contentView: some View {
+    private var requestHandlerView: some View {
         ZStack {
-            VStack {
-                switch viewState.requestState {
-                case .pending, .progressing:
-                    LoadingSpinnerOverlay(color: .orange, size: 40, speed: 0.3)
-                case .succeeded:
-                    VStack {
-                        Text(viewState.dataSource?.login ?? "")
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .foregroundColor(.cDark)
-                    }
-                case let .failed(error):
-                    ErrorView(error: error as? APIError)
+            switch viewState.requestState {
+            case .pending, .progressing:
+                LoadingSpinnerOverlay(color: .orange, size: 40, speed: 0.3)
+            case .succeeded:
+                contentView
+            case let .failed(error):
+                ErrorView(error: error as? APIError)
+            }
+        }
+    }
+
+    private var contentView: some View {
+        GeometryReader { geometry in
+            let navigationBarHeight = geometry.safeAreaInsets.top
+            ParallaxHeader(
+                size: geometry.size,
+                safeArea: geometry.safeAreaInsets,
+                navigationBarHeight: navigationBarHeight,
+                imageView: CircularImageView(imageURL: viewState.dataSource?.avatarURL)
+            ) {
+                if let githubUser = viewState.dataSource {
+                    ProfileInfo(githubUser: githubUser)
                 }
             }
+            .ignoresSafeArea(.all, edges: .top)
         }
     }
 }

@@ -22,7 +22,7 @@ final class ProfileFeatureTests: XCTestCase {
         // When
         await sut.reduce(intent: .viewAppeared)
         guard let dataSource = sut.viewState.dataSource else { return }
-        let result: GetAUser = dataSource
+        let result: GitHubUser = dataSource
 
         // Then
         XCTAssertEqual(result.login, "testUser")

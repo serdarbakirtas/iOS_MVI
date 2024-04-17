@@ -2,9 +2,9 @@ import Observation
 
 @Observable
 class ProfileViewState {
-    var requestState: RequestState<GetAUser, Error> = .pending
+    var requestState: RequestState<GitHubUser, Error> = .pending
 
-    var dataSource: GetAUser? {
+    var dataSource: GitHubUser? {
         switch requestState {
         case let .succeeded(state):
             state
