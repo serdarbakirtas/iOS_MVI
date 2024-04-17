@@ -41,7 +41,7 @@ struct ScrollDetector: UIViewRepresentable {
         func scrollViewWillEndDragging(_: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
             parent.onDraggingEnd(targetContentOffset.pointee.y, velocity.y)
         }
-        
+
         func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
             let velocity = scrollView.panGestureRecognizer.velocity(in: scrollView.panGestureRecognizer.view)
             parent.onDraggingEnd(scrollView.contentOffset.y, velocity.y)

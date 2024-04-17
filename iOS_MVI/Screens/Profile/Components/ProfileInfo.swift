@@ -36,7 +36,7 @@ struct ProfileInfo: View {
                     Text("\(githubUser.followers)")
                         .font(.montserratSemiBold(size: 24))
                         .foregroundColor(.cPrimary)
-                    Text("Followers")
+                    Text("followers")
                         .font(.montserrat(size: 16))
                         .foregroundColor(.cDark)
                 }
@@ -44,7 +44,7 @@ struct ProfileInfo: View {
                     Text("\(githubUser.following)")
                         .font(.montserratSemiBold(size: 24))
                         .foregroundColor(.cPrimary)
-                    Text("Following")
+                    Text("following")
                         .font(.montserrat(size: 16))
                         .foregroundColor(.cDark)
                 }

@@ -9,7 +9,7 @@ enum Asset {
         static let map = ImageAsset(name: "TabbarIcons/map-solid")
         static let profile = ImageAsset(name: "TabbarIcons/user-solid")
     }
-    
+
     enum Icons {
         static let location = ImageAsset(name: "Icons/location-dot-solid")
     }

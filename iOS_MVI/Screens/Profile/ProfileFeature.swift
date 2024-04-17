@@ -24,8 +24,10 @@ extension ProfileFeature {
         do {
             guard let result = try await githubRepository.fetchProfile() else { return }
             viewState.requestState = .succeeded(result)
+            Logger.debug(result)
         } catch {
             viewState.requestState = .failed(error)
+            Logger.error(error)
         }
     }
 }
