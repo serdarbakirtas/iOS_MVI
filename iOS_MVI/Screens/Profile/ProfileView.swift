@@ -43,7 +43,7 @@ extension ProfileView {
                 imageView: CircularImageView(imageURL: viewState.dataSource?.avatarURL)
             ) {
                 if let githubUser = viewState.dataSource {
-                    ProfileInfo(githubUser: githubUser)
+                    ProfileInfoView(githubUser: githubUser)
                 }
             }
             .ignoresSafeArea(.all, edges: .top)

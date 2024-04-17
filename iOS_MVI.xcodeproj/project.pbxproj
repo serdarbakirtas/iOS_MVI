@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30362A3F2BD0452F00F09F02 /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362A3E2BD0452F00F09F02 /* LocationRow.swift */; };
+		30362A412BD0455C00F09F02 /* FollowersFollowingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362A402BD0455C00F09F02 /* FollowersFollowingRow.swift */; };
+		30362A432BD0467F00F09F02 /* FollowersFollowingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30362A422BD0467F00F09F02 /* FollowersFollowingItem.swift */; };
 		303D203F2BCE8599009657F4 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303D203D2BCE8599009657F4 /* ParallaxHeader.swift */; };
 		303D20432BCE8687009657F4 /* ScrollDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303D20422BCE8687009657F4 /* ScrollDetector.swift */; };
 		303D20462BCE86E8009657F4 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303D20452BCE86E8009657F4 /* CustomShape.swift */; };
@@ -31,7 +34,7 @@
 		303D206F2BCFBDB9009657F4 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 303D205C2BCFBDB9009657F4 /* Montserrat-Thin.ttf */; };
 		303D20702BCFBDB9009657F4 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 303D205D2BCFBDB9009657F4 /* Montserrat-ThinItalic.ttf */; };
 		303D20722BCFBDF9009657F4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303D20712BCFBDF9009657F4 /* Font.swift */; };
-		303D20742BCFC049009657F4 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303D20732BCFC049009657F4 /* ProfileInfo.swift */; };
+		303D20742BCFC049009657F4 /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303D20732BCFC049009657F4 /* ProfileInfoView.swift */; };
 		3079936D2B48543B0069D5F1 /* iOS_MVIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079936C2B48543B0069D5F1 /* iOS_MVIApp.swift */; };
 		307993732B48543D0069D5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307993722B48543D0069D5F1 /* Assets.xcassets */; };
 		307993762B48543D0069D5F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307993752B48543D0069D5F1 /* Preview Assets.xcassets */; };
@@ -89,6 +92,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30362A3E2BD0452F00F09F02 /* LocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
+		30362A402BD0455C00F09F02 /* FollowersFollowingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersFollowingRow.swift; sourceTree = "<group>"; };
+		30362A422BD0467F00F09F02 /* FollowersFollowingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersFollowingItem.swift; sourceTree = "<group>"; };
 		303D203D2BCE8599009657F4 /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
 		303D20422BCE8687009657F4 /* ScrollDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollDetector.swift; sourceTree = "<group>"; };
 		303D20452BCE86E8009657F4 /* CustomShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
@@ -114,7 +120,7 @@
 		303D205C2BCFBDB9009657F4 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
 		303D205D2BCFBDB9009657F4 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		303D20712BCFBDF9009657F4 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		303D20732BCFC049009657F4 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
+		303D20732BCFC049009657F4 /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
 		307993692B48543B0069D5F1 /* iOS_MVI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_MVI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3079936C2B48543B0069D5F1 /* iOS_MVIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_MVIApp.swift; sourceTree = "<group>"; };
 		307993722B48543D0069D5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,8 +192,11 @@
 		303D203C2BCE8585009657F4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				30362A422BD0467F00F09F02 /* FollowersFollowingItem.swift */,
+				30362A402BD0455C00F09F02 /* FollowersFollowingRow.swift */,
+				30362A3E2BD0452F00F09F02 /* LocationRow.swift */,
 				303D203D2BCE8599009657F4 /* ParallaxHeader.swift */,
-				303D20732BCFC049009657F4 /* ProfileInfo.swift */,
+				303D20732BCFC049009657F4 /* ProfileInfoView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -608,6 +617,7 @@
 			files = (
 				303D203F2BCE8599009657F4 /* ParallaxHeader.swift in Sources */,
 				30AEDFF92BAF13EF00E674D9 /* ProfileView.swift in Sources */,
+				30362A412BD0455C00F09F02 /* FollowersFollowingRow.swift in Sources */,
 				30AEDFFA2BAF13EF00E674D9 /* ProfileViewState.swift in Sources */,
 				30AEDFFD2BAF16AA00E674D9 /* ContentView.swift in Sources */,
 				30AEDFFB2BAF13EF00E674D9 /* ProfileFeature.swift in Sources */,
@@ -618,13 +628,14 @@
 				303D20432BCE8687009657F4 /* ScrollDetector.swift in Sources */,
 				303D20462BCE86E8009657F4 /* CustomShape.swift in Sources */,
 				307993C42B485AD20069D5F1 /* ErrorView.swift in Sources */,
-				303D20742BCFC049009657F4 /* ProfileInfo.swift in Sources */,
+				303D20742BCFC049009657F4 /* ProfileInfoView.swift in Sources */,
 				303D20482BCE8D45009657F4 /* CacheAsyncImage.swift in Sources */,
 				307993C62B4AD3030069D5F1 /* GithubRepositoryRequest.swift in Sources */,
 				30AEE00C2BAF201D00E674D9 /* TabbarView.swift in Sources */,
 				307993B52B48576A0069D5F1 /* InjectedValues.swift in Sources */,
 				307993B72B48576A0069D5F1 /* Dependencies.swift in Sources */,
 				307993AA2B4856CE0069D5F1 /* HTTPMethod.swift in Sources */,
+				30362A432BD0467F00F09F02 /* FollowersFollowingItem.swift in Sources */,
 				307993B02B48573A0069D5F1 /* RequestState.swift in Sources */,
 				30AEE0002BAF170100E674D9 /* NetworkMonitor.swift in Sources */,
 				307993AD2B4856CE0069D5F1 /* API.swift in Sources */,
@@ -637,6 +648,7 @@
 				307993AC2B4856CE0069D5F1 /* APIRequestType.swift in Sources */,
 				303D20722BCFBDF9009657F4 /* Font.swift in Sources */,
 				3079936D2B48543B0069D5F1 /* iOS_MVIApp.swift in Sources */,
+				30362A3F2BD0452F00F09F02 /* LocationRow.swift in Sources */,
 				307993A22B48561B0069D5F1 /* GetAUser.swift in Sources */,
 				307993C22B485A890069D5F1 /* LoadingSpinnerOverlay.swift in Sources */,
 			);
