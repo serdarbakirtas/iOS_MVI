@@ -5,7 +5,6 @@ struct ParallaxHeader<Content>: View where Content: View {
     private let content: () -> Content
     private let size: CGSize
     private let safeArea: EdgeInsets
-    private let navigationBarHeight: CGFloat
     private let imageView: CircularImageView
 
     @State private var offsetY: CGFloat = 0
@@ -41,11 +40,9 @@ struct ParallaxHeader<Content>: View where Content: View {
     init(
         size: CGSize,
         safeArea: EdgeInsets,
-        navigationBarHeight: CGFloat,
         imageView: CircularImageView,
         @ViewBuilder content: @escaping () -> Content
     ) {
-        self.navigationBarHeight = navigationBarHeight
         self.size = size
         self.safeArea = safeArea
         self.imageView = imageView

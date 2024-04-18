@@ -24,7 +24,7 @@ extension ProfileView {
         ZStack {
             switch viewState.requestState {
             case .pending, .progressing:
-                LoadingSpinnerOverlay(color: .orange, size: 40, speed: 0.3)
+                LoadingSpinnerOverlay()
             case .succeeded:
                 contentView
             case let .failed(error):
@@ -35,11 +35,9 @@ extension ProfileView {
 
     private var contentView: some View {
         GeometryReader { geometry in
-            let navigationBarHeight = geometry.safeAreaInsets.top
             ParallaxHeader(
                 size: geometry.size,
                 safeArea: geometry.safeAreaInsets,
-                navigationBarHeight: navigationBarHeight,
                 imageView: CircularImageView(imageURL: viewState.dataSource?.avatarURL)
             ) {
                 if let githubUser = viewState.dataSource {
