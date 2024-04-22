@@ -73,6 +73,7 @@
 		30AEE0132BAF2A6A00E674D9 /* Simulator.png in Resources */ = {isa = PBXBuildFile; fileRef = 30AEE0112BAF2A6A00E674D9 /* Simulator.png */; };
 		30B17DBE2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */; };
 		30B17DC42B4AE82F00E93B6B /* FailingMockAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */; };
+		30DD23B12BD6D1F400690290 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DD23B02BD6D1F400690290 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		30AEE0112BAF2A6A00E674D9 /* Simulator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Simulator.png; sourceTree = "<group>"; };
 		30B17DBD2B4AE29B00E93B6B /* GithubRepositoryRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryRequestTests.swift; sourceTree = "<group>"; };
 		30B17DC32B4AE82F00E93B6B /* FailingMockAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailingMockAPIRepository.swift; sourceTree = "<group>"; };
+		30DD23B02BD6D1F400690290 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,8 +401,8 @@
 		307993C02B485A780069D5F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30DD23AF2BD6D1DC00690290 /* AsyncImage */,
 				30362A442BD10E9400F09F02 /* Loading */,
-				303D20472BCE8D45009657F4 /* CacheAsyncImage.swift */,
 				303D20492BCE8DB1009657F4 /* CircularImageView.swift */,
 				307993C32B485AD20069D5F1 /* ErrorView.swift */,
 				30AEE0012BAF17F100E674D9 /* NavigationBarModifier.swift */,
@@ -474,6 +476,15 @@
 				30AEE0112BAF2A6A00E674D9 /* Simulator.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		30DD23AF2BD6D1DC00690290 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				303D20472BCE8D45009657F4 /* CacheAsyncImage.swift */,
+				30DD23B02BD6D1F400690290 /* ImageLoader.swift */,
+			);
+			path = AsyncImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -654,6 +665,7 @@
 				307993BB2B4858640069D5F1 /* Logger.swift in Sources */,
 				307993B82B48576A0069D5F1 /* InjectionKey.swift in Sources */,
 				307993AB2B4856CE0069D5F1 /* APIError.swift in Sources */,
+				30DD23B12BD6D1F400690290 /* ImageLoader.swift in Sources */,
 				30AEE0022BAF17F100E674D9 /* NavigationBarModifier.swift in Sources */,
 				307993B62B48576A0069D5F1 /* Injected.swift in Sources */,
 				307993AE2B4856CE0069D5F1 /* APIRequest.swift in Sources */,

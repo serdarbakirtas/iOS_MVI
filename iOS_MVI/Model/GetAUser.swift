@@ -35,6 +35,37 @@ struct GitHubUser: Decodable {
     let updatedAt: Date
 
     enum CodingKeys: String, CodingKey {
-        case login, id, nodeID = "node_id", avatarURL = "avatar_url", gravatarID = "gravatar_id", url, htmlURL = "html_url", followersURL = "followers_url", followingURL = "following_url", gistsURL = "gists_url", starredURL = "starred_url", subscriptionsURL = "subscriptions_url", organizationsURL = "organizations_url", reposURL = "repos_url", eventsURL = "events_url", receivedEventsURL = "received_events_url", type, siteAdmin = "site_admin", name, company, blog, location, email, hireable, bio, twitterUsername = "twitter_username", publicRepos = "public_repos", publicGists = "public_gists", followers, following, createdAt = "created_at", updatedAt = "updated_at"
+        case login,
+             id,
+             nodeID = "node_id",
+             avatarURL = "avatar_url",
+             gravatarID = "gravatar_id",
+             url,
+             htmlURL = "html_url",
+             followersURL = "followers_url",
+             followingURL = "following_url",
+             gistsURL = "gists_url",
+             starredURL = "starred_url",
+             subscriptionsURL = "subscriptions_url",
+             organizationsURL = "organizations_url",
+             reposURL = "repos_url",
+             eventsURL = "events_url",
+             receivedEventsURL = "received_events_url",
+             type,
+             siteAdmin = "site_admin",
+             name,
+             company,
+             blog,
+             location,
+             email,
+             hireable,
+             bio,
+             twitterUsername = "twitter_username",
+             publicRepos = "public_repos",
+             publicGists = "public_gists",
+             followers,
+             following,
+             createdAt = "created_at",
+             updatedAt = "updated_at"
     }
 }
