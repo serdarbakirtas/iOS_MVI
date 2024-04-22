@@ -6,34 +6,33 @@ enum NetworkStatus: String {
     case disconnected
 }
 
+// Observable object for monitoring network status
 @Observable class NetworkMonitor {
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue(label: "NetworkMonitor")
 
     // Observable property to track network status
     var networkStatus: NetworkStatus = .connected
-
-    init() {
-        startMonitoring()
-    }
 }
 
 // MARK: - Private functions
 
 extension NetworkMonitor {
-    private func startMonitoring() {
-        monitor.pathUpdateHandler = { [weak self] path in
-            guard let self else { return }
+    func startMonitoringAsync() async {
+        do {
+            // Start monitoring network path changes
+            try await withCheckedThrowingContinuation { continuation in
+                monitor.pathUpdateHandler = { [weak self] path in
+                    let status: NetworkStatus = path.status == .satisfied ? .connected : .disconnected
+                    self?.networkStatus = status
+                }
+                monitor.start(queue: queue)
 
-            DispatchQueue.main.async {
-                self.updateNetworkStatus(for: path)
+                // Completion handler for the asynchronous operation
+                continuation.resume(returning: ())
             }
+        } catch {
+            Logger.error("Error starting network monitoring: \(error)")
         }
-        monitor.start(queue: queue)
-    }
-
-    // Method to update network status based on path update
-    private func updateNetworkStatus(for path: NWPath) {
-        networkStatus = path.status == .satisfied ? .connected : .disconnected
     }
 }
