@@ -34,18 +34,16 @@ extension ProfileView {
     }
 
     private var contentView: some View {
-        GeometryReader { geometry in
-            ParallaxHeader(
-                size: geometry.size,
-                safeArea: geometry.safeAreaInsets,
-                imageView: CircularImageView(imageURL: viewState.dataSource?.avatarURL)
-            ) {
+        ScrollView(.vertical, showsIndicators: false, content: {
+            StretchableHeader(image: CircularImageView(imageURL: viewState.dataSource?.avatarURL))
+
+            LazyVStack(spacing: 8) {
                 if let githubUser = viewState.dataSource {
                     ProfileInfoView(githubUser: githubUser)
                 }
             }
-            .ignoresSafeArea(.all, edges: .top)
-        }
+        })
+        .ignoresSafeArea(.all, edges: .top)
     }
 }
 

@@ -24,7 +24,7 @@ actor ImageLoader: Observable {
             self.image = image
         } catch {
             // Handle cancellation error separately
-            if let cancellationError = error as? CancellationError {
+            if error is CancellationError {
                 Logger.info("Image loading cancelled.")
             } else {
                 Logger.error("Failed to load image: \(error)")
