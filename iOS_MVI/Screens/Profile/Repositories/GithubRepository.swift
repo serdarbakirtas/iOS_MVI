@@ -5,7 +5,7 @@ protocol GithubRepository {
 }
 
 struct StandardGithubRepository: GithubRepository {
-    @Injected(\.networkProvider) var networkProvider: APIRepo
+    @Dependency(\.networkProvider) var networkProvider
 
     func fetchProfile() async throws -> GitHubUser? {
         let request = GithubRepositoryRequest(apiRepo: .getProfile)

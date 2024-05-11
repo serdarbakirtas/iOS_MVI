@@ -1,14 +1,14 @@
 import SwiftUI
 
 @propertyWrapper
-struct Injected<T> {
-    private let keyPath: WritableKeyPath<InjectedValues, T>
+struct Dependency<T> {
+    private let keyPath: WritableKeyPath<DependencyValues, T>
     var wrappedValue: T {
-        get { InjectedValues[keyPath] }
-        set { InjectedValues[keyPath] = newValue }
+        get { DependencyValues[keyPath] }
+        set { DependencyValues[keyPath] = newValue }
     }
 
-    init(_ keyPath: WritableKeyPath<InjectedValues, T>) {
+    init(_ keyPath: WritableKeyPath<DependencyValues, T>) {
         self.keyPath = keyPath
     }
 }

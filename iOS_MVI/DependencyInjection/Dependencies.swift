@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - Dependency Injection
 
-extension InjectedValues {
+extension DependencyValues {
     // MARK: Network Provider
 
     var networkProvider: APIRepo {
@@ -12,9 +12,9 @@ extension InjectedValues {
 
     // MARK: GitHub Repository Provider
 
-    var githubRepositoryProvider: GithubRepository {
-        get { Self[GithubRepositoryProviderKey.self] }
-        set { Self[GithubRepositoryProviderKey.self] = newValue }
+    var githubRepository: GithubRepository {
+        get { Self[GithubRepositoryKey.self] }
+        set { Self[GithubRepositoryKey.self] = newValue }
     }
 }
 
@@ -24,6 +24,6 @@ private struct NetworkProviderKey: InjectionKey {
     static var currentValue: APIRepo = API()
 }
 
-private struct GithubRepositoryProviderKey: InjectionKey {
+private struct GithubRepositoryKey: InjectionKey {
     static var currentValue: GithubRepository = StandardGithubRepository()
 }

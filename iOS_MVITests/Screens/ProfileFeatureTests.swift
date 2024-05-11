@@ -17,7 +17,7 @@ final class ProfileFeatureTests: XCTestCase {
 
     func testViewAppearedIntent() async throws {
         // Given
-        InjectedValues[\.networkProvider] = MockAPIRepository()
+        DependencyValues[\.networkProvider] = MockAPIRepository()
 
         // When
         await sut.reduce(intent: .viewAppeared)

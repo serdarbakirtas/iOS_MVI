@@ -1,5 +1,5 @@
-final class ProfileFeature {
-    @Injected(\.githubRepositoryProvider) var githubRepository: GithubRepository
+struct ProfileFeature {
+    @Dependency(\.githubRepository) var githubRepository
 
     // Intent Definition
     enum Intent {

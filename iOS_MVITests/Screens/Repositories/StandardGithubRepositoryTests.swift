@@ -13,7 +13,7 @@ class StandardGithubRepositoryTests: XCTestCase {
     }
 
     func testFetchProfileSuccess() async {
-        InjectedValues[\.networkProvider] = MockAPIRepository()
+        DependencyValues[\.networkProvider] = MockAPIRepository()
         
         do {
             // Assuming the mock repository returns the profile data
@@ -34,7 +34,7 @@ class StandardGithubRepositoryTests: XCTestCase {
     func testFetchProfileFailure() async {
         
         // Initialize the repository with the failing mock API repository
-        InjectedValues[\.networkProvider] = FailingMockAPIRepository()
+        DependencyValues[\.networkProvider] = FailingMockAPIRepository()
         
         do {
             // Assuming the mock repository returns the profile data
